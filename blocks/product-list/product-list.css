@@ -1,5 +1,6 @@
 .product-list {
   padding: 4rem 0;
+  display: grid;
 }
 
 .product-list__header {
@@ -96,21 +97,14 @@
 
 .product-list__load-more {
   display: none;
-
   margin: 2rem auto 0;
-
   padding: 0.875rem 1.5rem;
-
   border: 1px solid #dbeafe;
   border-radius: 999px;
-
   background: #eff6ff;
   color: #2563eb;
-
   font-weight: 600;
-
   cursor: pointer;
-
   transition: all .2s ease;
 }
 

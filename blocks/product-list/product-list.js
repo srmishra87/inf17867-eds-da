@@ -218,7 +218,7 @@ export default async function decorate(block) {
       'product-list__footer';
 
     footer.innerHTML = `
-      ${config['cta link']}
+      <a href=${config['cta link']}>
         ${config['cta label']}
       </a>
     `;
