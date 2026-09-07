@@ -1,0 +1,17 @@
+.plp-filters {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.plp-search,
+.plp-category,
+.plp-sort {
+  padding: 12px;
+  min-width: 220px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
