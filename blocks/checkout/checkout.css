@@ -1,0 +1,296 @@
+.checkout,
+.checkout-profile,
+.checkout-form,
+.checkout-review {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.checkout h1,
+.checkout-profile h2,
+.checkout-form h2,
+.checkout-review h2 {
+  margin-bottom: 2rem;
+}
+
+.checkout-products {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.checkout-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1.5rem;
+
+  padding: 1.5rem;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  background: #fff;
+}
+
+.checkout-item__image {
+  width: 120px;
+  height: 120px;
+
+  overflow: hidden;
+
+  border-radius: 12px;
+  border: 1px solid #f3f4f6;
+}
+
+.checkout-item__image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.checkout-item__details h3 {
+  margin: 0 0 0.5rem;
+}
+
+.checkout-item__details p {
+  margin: 0 0 1rem;
+  color: #6b7280;
+}
+
+.checkout-item__qty {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  margin-bottom: 1rem;
+}
+
+.checkout-item__qty button {
+  width: 36px;
+  height: 36px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  background: #fff;
+
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.checkout-item__qty button:hover {
+  background: #f9fafb;
+}
+
+.checkout-summary {
+  margin-top: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.5rem;
+
+  border-radius: 16px;
+
+  background: #f8fafc;
+}
+
+.next-step,
+.save-profile,
+.continue-review,
+.edit-profile,
+.place-order,
+.back-to-profile {
+  padding: 0.875rem 1.5rem;
+
+  border: 0;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: all 0.2s ease;
+}
+
+.next-step,
+.save-profile,
+.continue-review,
+.place-order {
+  background: #2563eb;
+  color: #fff;
+}
+
+.next-step:hover,
+.save-profile:hover,
+.continue-review:hover,
+.place-order:hover {
+  background: #1d4ed8;
+}
+
+.edit-profile,
+.back-to-profile {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.edit-profile:hover,
+.back-to-profile:hover {
+  background: #e5e7eb;
+}
+
+.checkout-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Form */
+
+.checkout-form {
+  max-width: 700px;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  width: 100%;
+
+  margin-bottom: 1rem;
+
+  padding: 1rem;
+
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+
+  font: inherit;
+}
+
+.checkout-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Profile Card */
+
+.profile-card {
+  padding: 1.5rem;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  background: #fff;
+}
+
+.profile-card p {
+  margin: 0.75rem 0;
+}
+
+/* Review Page */
+
+.review-address,
+.review-items {
+  padding: 1.5rem;
+
+  margin-bottom: 1.5rem;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  background: #fff;
+}
+
+.review-item {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0.75rem 0;
+
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.review-item:last-child {
+  border-bottom: 0;
+}
+
+.review-total {
+  margin-top: 2rem;
+
+  text-align: right;
+}
+
+.review-total h3 {
+  font-size: 1.5rem;
+}
+
+/* Empty State */
+
+.checkout-empty {
+  text-align: center;
+
+  padding: 5rem 1rem;
+}
+
+.checkout-empty h2 {
+  margin-bottom: 1rem;
+}
+
+.checkout-empty a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .checkout-item {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-item__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .checkout-summary {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .checkout-actions {
+    flex-direction: column;
+  }
+
+  .next-step,
+  .save-profile,
+  .continue-review,
+  .edit-profile,
+  .place-order,
+  .back-to-profile {
+    width: 100%;
+  }
+}
+.form-field {
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  display: block;
+
+  margin-top: 0.35rem;
+
+  color: #dc2626;
+
+  font-size: 0.875rem;
+
+  min-height: 18px;
+}
+
+.checkout-form input.error,
+.checkout-form textarea.error {
+  border-color: #dc2626;
+}

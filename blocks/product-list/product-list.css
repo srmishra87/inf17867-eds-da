@@ -28,6 +28,7 @@
   border-radius: 16px;
   overflow: hidden;
   background: #fff;
+  max-width: 20rem;
 }
 
 .product-card__link {
