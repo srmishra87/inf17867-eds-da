@@ -530,7 +530,7 @@ header {
 
   border-radius: 8px;
 
-  color: #fff;
+  color: #ffffff !important;
   background: #2563eb;
 
   font-weight: 600;
@@ -539,7 +539,24 @@ header {
 .mini-cart__actions a:hover {
   background: #1d4ed8;
 }
-
+.mini-cart__qty{
+  padding: 5px;
+}
+  .mini-cart__plus,.mini-cart__minus{
+      width: 38px;
+    height: 38px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background: #fff;
+    color: #111827;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
 /* Hamburger */
 
 .nav-hamburger {
@@ -573,4 +590,5 @@ header {
     width: 300px;
     right: -16px;
   }
+
 }
