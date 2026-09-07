@@ -1,0 +1,18 @@
+version: 1
+
+indices:
+  products:
+    include:
+      - /commerce/**
+
+    target: /query-index
+
+    properties:
+      - sku
+      - title
+      - category
+      - price
+      - image
+      - rating
+      - description
+      - featured

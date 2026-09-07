@@ -393,13 +393,7 @@ export default async function decorate(block) {
 
   if (navTools) {
     navTools.innerHTML = `
-      <div class="header-search">
-        <input
-          type="search"
-          placeholder="Search products..."
-          aria-label="Search products"
-        />
-      </div>
+      
 
       <a href="/account">
         👤

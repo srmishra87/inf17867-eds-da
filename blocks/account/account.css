@@ -1,0 +1,43 @@
+.account,
+.account-empty {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.account-card {
+  padding: 2rem;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  background: #fff;
+}
+
+.account-field {
+  margin-bottom: 1.5rem;
+}
+
+.account-field:last-child {
+  margin-bottom: 0;
+}
+
+.account-field label {
+  display: block;
+
+  margin-bottom: 0.5rem;
+
+  font-size: 0.875rem;
+  font-weight: 600;
+
+  color: #6b7280;
+}
+
+.account-field p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.account-empty {
+  text-align: center;
+  padding: 4rem 1rem;
+}
